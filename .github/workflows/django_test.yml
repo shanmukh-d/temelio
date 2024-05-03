@@ -30,10 +30,10 @@ jobs:
       
     - name: Install Dependencies
       run: |
-        cd backend/teme
+        cd back_end/teme
         python -m pip install --upgrade pip
         pip install -r requirements.txt
     - name: Run Tests
       run: |
-        cd backend/teme
+        cd back_end/teme
         python manage.py test
