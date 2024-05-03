@@ -24,8 +24,8 @@ class ListViewTest(TestCase):
         self.url = '/api/foundations/list/'
 
     def test_list_foundations(self):
-        Foundation.objects.create(name='Test Foundation 1', email='test1@example.com', address='123 Test St')
-        Foundation.objects.create(name='Test Foundation 2', email='test2@example.com', address='456 Test St')
+        Foundation.objects.create(name='Test Foundation 1', email='test1@example.com')
+        Foundation.objects.create(name='Test Foundation 2', email='test2@example.com')
         response = self.client.get(self.url)
         self.assertEqual(response.status_code, 200)
         self.assertEqual(response.json()['status'], 'ok')
