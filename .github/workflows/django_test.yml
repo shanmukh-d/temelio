@@ -29,7 +29,13 @@ jobs:
       run: ls
           
     - name: Navigate to Project Directory and Install Dependencies
-      run: cd backend/teme
+      run: cd backend
+    - name: List files in current directory
+      run: ls
+    - name: Navigate to Project Directory and Install Dependencies
+      run: cd teme
+    - name: List files in current directory
+      run: ls
       
     - name: Install Dependencies
       run: |
