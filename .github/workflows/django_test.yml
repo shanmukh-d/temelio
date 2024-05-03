@@ -27,20 +27,15 @@ jobs:
 
     - name: List files in current directory
       run: ls
-          
-    - name: Navigate to Project Directory and Install Dependencies
-      run: cd backend
-    - name: List files in current directory
-      run: ls
-    - name: Navigate to Project Directory and Install Dependencies
-      run: cd teme
-    - name: List files in current directory
-      run: ls
       
     - name: Install Dependencies
       run: |
+        cd backend
+        cd teme
         python -m pip install --upgrade pip
         pip install -r requirements.txt
     - name: Run Tests
       run: |
+        cd backend
+        cd teme
         python manage.py test
