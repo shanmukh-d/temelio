@@ -1,0 +1,29 @@
+# Project Name
+
+
+Large foundations tend to distribute money to several hundreds of nonprofits within a year. For legal reasons, the foundation needs to formally email each nonprofit a message that contains the nonprofit's name, the address, and the current date.
+
+As you can imagine, it is tedious for foundations to manually create an email for each nonprofit they distribute money to. We want to help make their process easier by building some UI and API endpoints to manage this workflow.
+
+
+## Table of Contents
+
+- [Installation](#installation)
+- [Usage](#usage)
+
+## Installation
+
+pip install -r requirements.txt
+
+## Usage
+
+Steps:
+    1. To run the server run the command python manage.py runserver 8000
+    2. for front end clone the front end repo and then do npm start
+
+Note:
+    Note:
+        This project is dockerized along with a compose file, allowing for easy deployment and scalability. To run the project using Docker, follow these steps:
+        1. Install Docker on your machine.
+        2. Build the Docker image by running the command: `docker compose up  --build`
+        3. Access the project in your browser at `http://localhost:8000`
