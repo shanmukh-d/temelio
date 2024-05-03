@@ -21,6 +21,9 @@ jobs:
       uses: actions/setup-python@v3
       with:
         python-version: '3.8'
+    - name: Navigate to Project Directory and Install Dependencies
+      run: |
+        cd backend/teme
     - name: Install Dependencies
       run: |
         python -m pip install --upgrade pip
